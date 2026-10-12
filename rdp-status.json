@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "rdpfree-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -41,10 +41,11 @@
   "akses": {
     "tailscale": {
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.85.81.71",
       "status": "ok",
-      "hostname": "rdpfree-3",
-      "magicdns": "rdpfree-3.tail9c6b18.ts.net."
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     },
     "mode": "tailscale"
   },
@@ -131,5 +132,6 @@
       "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini."
     }
   },
-  "heartbeat_at": "2026-10-12T10:59:56.6844019Z"
+  "heartbeat_at": "2026-10-12T10:59:56.6844019Z",
+  "stopped_at": "2026-10-12T11:02:36Z"
 }
