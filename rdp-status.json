@@ -53,5 +53,90 @@
     "microphone": "rdp_capture_enabled",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled"
+  },
+  "storage": {
+    "boost": "ok",
+    "before_gb": 82.0,
+    "after_gb": 105.37,
+    "gained_gb": 23.37,
+    "estimated_freed_gb": 19,
+    "drives": [
+      {
+        "letter": "C",
+        "size_gb": 255.45,
+        "used_gb": 150.08,
+        "free_gb": 105.37
+      },
+      {
+        "letter": "D",
+        "size_gb": 150.0,
+        "used_gb": 2.98,
+        "free_gb": 147.02
+      }
+    ],
+    "game_dir": "D:\\Games (disarankan untuk GTA)",
+    "note": "Storage boost selesai. Android/Haskell/CodeQL/dotnet lama & cache dibersihkan. Sisa 70GB -> bisa jadi 110-140GB free."
+  },
+  "win10": {
+    "look": "ok",
+    "badge": "ok",
+    "wallpaper": "ok",
+    "search": "ok",
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
+  },
+  "grafis": {
+    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
+    "install": "mesa 26.2.4.0 [Mesa/X.org]",
+    "dir": "C:\\XyRDP\\grafis",
+    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
+    "mode": "software",
+    "adapters": "Microsoft Hyper-V Video",
+    "mesa": "26.2.4",
+    "debug": "",
+    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
+    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
+    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll"
+  },
+  "samp": {
+    "directplay": "Enabled",
+    "netfx3": "Enabled",
+    "directx": "verified_x86_x64",
+    "status": "dependencies_ready",
+    "play_tested": false,
+    "gta_installed": false,
+    "samp_installed": false,
+    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+    "vcredist": "verified_x86_x64_and_2013_x86"
+  },
+  "games": {
+    "minecraft_java": {
+      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi",
+      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
+      "status": "installer_ready",
+      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan."
+    },
+    "samp": {
+      "game_dir": null,
+      "status": "dependencies_ready",
+      "samp_installed": false,
+      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+      "gta_installed": false
+    },
+    "roblox": {
+      "note": "Tidak dipilih",
+      "status": "disabled"
+    },
+    "minecraft_bedrock": {
+      "note": "Tidak dipilih",
+      "status": "disabled"
+    }
+  },
+  "game_environment": {
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "hypervisor_present": true,
+    "play_tested": false,
+    "windows_server": true,
+    "runner": "windows-2022"
   }
 }
