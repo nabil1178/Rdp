@@ -1,25 +1,25 @@
 {
-  "active": false,
-  "hostname": "rdpfree-3",
-  "os": "Microsoft Windows Server 2022 Datacenter",
-  "os_build": "10.0.20348",
+  "active": true,
+  "hostname": "rdpfree-4",
+  "os": "Microsoft Windows Server 2025 Datacenter",
+  "os_build": "10.0.26100",
   "os_style": "Native Windows",
   "hardware": {
+    "ram_gb": 16.0,
     "cpu_threads": 4,
-    "disk_free_gb": 82.2,
-    "ram_gb": 16.0
+    "disk_free_gb": 31.9
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-12T10:22:55Z",
-  "expires_at": "2026-10-12T16:17:55Z",
+  "started_at": "2026-10-13T12:43:09Z",
+  "expires_at": "2026-10-13T18:38:09Z",
   "duration_menit": 355,
-  "run_id": "38235937375",
+  "run_id": "38399326162",
   "run_attempt": "1",
-  "run_number": "3",
-  "run_url": "https://github.com/nabil1178/Rdp/actions/runs/38235937375",
+  "run_number": "4",
+  "run_url": "https://github.com/nabil1178/Rdp/actions/runs/38399326162",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -41,11 +41,10 @@
   "akses": {
     "tailscale": {
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "ip": "100.80.198.34",
+      "hostname": "rdpfree-4",
       "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
+      "magicdns": "rdpfree-4.tail9c6b18.ts.net."
     },
     "mode": "tailscale"
   },
@@ -54,84 +53,5 @@
     "audio_output": "rdp_playback_enabled",
     "wallpaper": "xyverse_configured_for_user_logon",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
-  },
-  "storage": {
-    "boost": "ok",
-    "before_gb": 82.02,
-    "after_gb": 105.4,
-    "gained_gb": 23.38,
-    "estimated_freed_gb": 19,
-    "drives": [
-      {
-        "size_gb": 255.45,
-        "letter": "C",
-        "used_gb": 150.05,
-        "free_gb": 105.4
-      },
-      {
-        "size_gb": 150.0,
-        "letter": "D",
-        "used_gb": 2.98,
-        "free_gb": 147.02
-      }
-    ],
-    "game_dir": "D:\\Games (disarankan untuk GTA)",
-    "note": "Storage boost selesai. Android/Haskell/CodeQL/dotnet lama & cache dibersihkan. Sisa 70GB -> bisa jadi 110-140GB free."
-  },
-  "grafis": {
-    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "mode": "software",
-    "mesa": "26.2.4",
-    "dir": "C:\\XyRDP\\grafis",
-    "adapters": "Microsoft Hyper-V Video",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
-    "debug": "",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll"
-  },
-  "samp": {
-    "play_tested": false,
-    "gta_installed": false,
-    "status": "dependencies_ready",
-    "directplay": "Enabled",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "samp_installed": false,
-    "netfx3": "Enabled",
-    "directx": "verified_x86_x64"
-  },
-  "game_environment": {
-    "runner": "windows-2022",
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "play_tested": false,
-    "hypervisor_present": true
-  },
-  "games": {
-    "minecraft_java": {
-      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi",
-      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
-      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan.",
-      "status": "installer_ready"
-    },
-    "minecraft_bedrock": {
-      "status": "unsupported_environment",
-      "note": "Bedrock membutuhkan Windows desktop dengan Microsoft Store/Xbox. Windows Server bukan target yang didukung setup ini."
-    },
-    "samp": {
-      "gta_installed": false,
-      "game_dir": null,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-      "status": "dependencies_ready",
-      "samp_installed": false
-    },
-    "roblox": {
-      "status": "unsupported_environment",
-      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini."
-    }
-  },
-  "heartbeat_at": "2026-10-12T10:59:56.6844019Z",
-  "stopped_at": "2026-10-12T11:02:36Z"
+  }
 }
