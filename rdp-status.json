@@ -6,18 +6,18 @@
   "os_style": "Native Windows",
   "hardware": {
     "ram_gb": 16.0,
-    "cpu_threads": 4,
-    "disk_free_gb": 31.2
+    "disk_free_gb": 28.5,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-16T10:55:44Z",
-  "expires_at": "2026-10-16T16:50:44Z",
+  "started_at": "2026-10-16T15:49:44Z",
+  "expires_at": "2026-10-16T21:44:44Z",
   "duration_menit": 355,
   "run_id": "38685500140",
-  "run_attempt": "2",
+  "run_attempt": "3",
   "run_number": "7",
   "run_url": "https://github.com/nabil1178/Rdp/actions/runs/38685500140",
   "mode": "bersih+win10",
@@ -41,17 +41,17 @@
   "akses": {
     "mode": "tailscale",
     "tailscale": {
-      "status": "ok",
-      "ip": "100.73.203.37",
+      "ip": "100.117.211.24",
+      "hostname": "rdpfree-7",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "magicdns": "rdpfree-7.tail9c6b18.ts.net.",
-      "hostname": "rdpfree-7"
+      "status": "ok"
     }
   },
   "media": {
-    "audio_output": "rdp_playback_enabled",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "microphone": "rdp_capture_enabled",
+    "audio_output": "rdp_playback_enabled",
     "wallpaper": "xyverse_configured_for_user_logon"
   }
 }
