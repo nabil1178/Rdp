@@ -1,23 +1,23 @@
 {
-  "active": false,
+  "active": true,
   "hostname": "rdpfree-9",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "ram_gb": 16.0,
+    "disk_free_gb": 78.4,
     "cpu_threads": 4,
-    "disk_free_gb": 82.9
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-16T23:59:57Z",
-  "expires_at": "2026-10-17T05:54:57Z",
+  "started_at": "2026-10-30T04:24:04Z",
+  "expires_at": "2026-10-30T10:19:04Z",
   "duration_menit": 355,
   "run_id": "38984241969",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "run_number": "9",
   "run_url": "https://github.com/nabil1178/Rdp/actions/runs/38984241969",
   "mode": "bersih+win10",
@@ -39,116 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "mode": "tailscale",
     "tailscale": {
-      "status": "ok",
+      "ip": "100.68.127.77",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    },
-    "mode": "tailscale"
-  },
-  "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "audio_output": "rdp_playback_enabled",
-    "microphone": "rdp_capture_enabled"
-  },
-  "storage": {
-    "boost": "ok",
-    "before_gb": 82.76,
-    "after_gb": 90.49,
-    "gained_gb": 7.73,
-    "estimated_freed_gb": 19,
-    "drives": [
-      {
-        "letter": "C",
-        "free_gb": 90.49,
-        "used_gb": 164.96,
-        "size_gb": 255.45
-      },
-      {
-        "letter": "D",
-        "free_gb": 147.02,
-        "used_gb": 2.98,
-        "size_gb": 150.0
-      }
-    ],
-    "game_dir": "D:\\Games (disarankan untuk GTA)",
-    "note": "Storage boost selesai. Android/Haskell/CodeQL/dotnet lama & cache dibersihkan. Sisa 70GB -> bisa jadi 110-140GB free."
-  },
-  "win10": {
-    "look": "ok",
-    "badge": "ok",
-    "wallpaper": "ok",
-    "search": "ok",
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
-  },
-  "grafis": {
-    "dir": "C:\\XyRDP\\grafis",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
-    "mesa": "26.2.4",
-    "mode": "software",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
-    "adapters": "Microsoft Hyper-V Video",
-    "debug": "",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]"
-  },
-  "extras": {
-    "lightshot": "skip",
-    "translucent": "ok",
-    "wallpaper": "ok",
-    "wallpaper_file": "wallpaper.jpg",
-    "vscode": "skip",
-    "notepadpp": "skip",
-    "admin": true
-  },
-  "samp": {
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "netfx3": "Enabled",
-    "samp_installed": false,
-    "directplay": "Enabled",
-    "play_tested": false,
-    "gta_installed": false,
-    "directx": "verified_x86_x64",
-    "status": "dependencies_ready"
-  },
-  "game_environment": {
-    "play_tested": false,
-    "hypervisor_present": true,
-    "runner": "windows-2022",
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2022 Datacenter"
-  },
-  "games": {
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "minecraft_java": {
-      "status": "installer_ready",
-      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi",
-      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
-      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan."
-    },
-    "roblox": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "samp": {
-      "status": "dependencies_ready",
-      "game_dir": null,
-      "gta_installed": false,
-      "samp_installed": false,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
+      "status": "ok",
+      "magicdns": "rdpfree-9.tail9c6b18.ts.net.",
+      "hostname": "rdpfree-9"
     }
   },
-  "heartbeat_at": "2026-10-17T01:31:03.6273349Z",
-  "stopped_at": "2026-10-17T01:32:17Z"
+  "media": {
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "audio_output": "rdp_playback_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "microphone": "rdp_capture_enabled"
+  }
 }
