@@ -1,25 +1,25 @@
 {
-  "active": false,
-  "hostname": "rdpfree-9",
+  "active": true,
+  "hostname": "rdpfree-10",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 78.4,
-    "cpu_threads": 4,
-    "ram_gb": 16.0
+    "disk_free_gb": 81.0,
+    "ram_gb": 16.0,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-30T04:24:04Z",
-  "expires_at": "2026-10-30T10:19:04Z",
+  "started_at": "2026-11-03T14:57:22Z",
+  "expires_at": "2026-11-03T20:52:22Z",
   "duration_menit": 355,
-  "run_id": "38984241969",
-  "run_attempt": "2",
-  "run_number": "9",
-  "run_url": "https://github.com/nabil1178/Rdp/actions/runs/38984241969",
+  "run_id": "41658768187",
+  "run_attempt": "1",
+  "run_number": "10",
+  "run_url": "https://github.com/nabil1178/Rdp/actions/runs/41658768187",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,21 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
+      "ip": "100.66.40.35",
+      "hostname": "rdpfree-10",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    }
+      "magicdns": "rdpfree-10.tail9c6b18.ts.net.",
+      "status": "ok"
+    },
+    "mode": "tailscale"
   },
   "media": {
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled"
-  },
-  "stopped_at": "2026-10-30T04:27:03Z"
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "microphone": "rdp_capture_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon"
+  }
 }
