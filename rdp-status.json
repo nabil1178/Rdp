@@ -53,5 +53,99 @@
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "microphone": "rdp_capture_enabled",
     "wallpaper": "xyverse_configured_for_user_logon"
+  },
+  "storage": {
+    "boost": "ok",
+    "before_gb": 80.85,
+    "after_gb": 104.01,
+    "gained_gb": 23.16,
+    "estimated_freed_gb": 20,
+    "drives": [
+      {
+        "used_gb": 151.44,
+        "letter": "C",
+        "free_gb": 104.01,
+        "size_gb": 255.45
+      },
+      {
+        "used_gb": 2.98,
+        "letter": "D",
+        "free_gb": 147.02,
+        "size_gb": 150.0
+      }
+    ],
+    "game_dir": "D:\\Games (disarankan untuk GTA)",
+    "note": "Storage boost selesai. Android/Haskell/CodeQL/dotnet lama & cache dibersihkan. Sisa 70GB -> bisa jadi 110-140GB free."
+  },
+  "win10": {
+    "look": "ok",
+    "badge": "ok",
+    "wallpaper": "ok",
+    "search": "ok",
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
+  },
+  "grafis": {
+    "note": "Pasang OpenGL software ke System32 gagal (belum). Vulkan lavapipe & WARP tetap aktif; DLL Mesa tersedia di C:\\XyRDP\\grafis\\gl untuk pemakaian per-aplikasi.",
+    "files": "vulkan_lvp.dll",
+    "dir": "C:\\XyRDP\\grafis",
+    "mesa": "26.2.6",
+    "adapters": "Microsoft Hyper-V Video",
+    "loader": "",
+    "mode": "software",
+    "vulkan": "lavapipe (CPU) / loader vulkan-1.dll tidak ada",
+    "install": "belum",
+    "opengl": "llvmpipe (Mesa 26.2.6) - belum terverifikasi",
+    "debug": "loader-tidak-ada"
+  },
+  "extras": {
+    "lightshot": "skip",
+    "translucent": "ok",
+    "wallpaper": "ok",
+    "wallpaper_file": "wallpaper.jpg",
+    "vscode": "skip",
+    "notepadpp": "skip",
+    "admin": true
+  },
+  "samp": {
+    "netfx3": "Enabled",
+    "play_tested": false,
+    "vcredist": "verified_x86_x64_and_2013_x86",
+    "directplay": "Enabled",
+    "directx": "verified_x86_x64",
+    "samp_installed": false,
+    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+    "status": "dependencies_ready",
+    "gta_installed": false
+  },
+  "game_environment": {
+    "hypervisor_present": true,
+    "play_tested": false,
+    "runner": "windows-2022",
+    "windows_server": true,
+    "os": "Microsoft Windows Server 2022 Datacenter"
+  },
+  "games": {
+    "minecraft_java": {
+      "status": "installer_ready",
+      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
+      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan.",
+      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi"
+    },
+    "roblox": {
+      "status": "unsupported_environment",
+      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini."
+    },
+    "samp": {
+      "status": "dependencies_ready",
+      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+      "samp_installed": false,
+      "gta_installed": false,
+      "game_dir": null
+    },
+    "minecraft_bedrock": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    }
   }
 }
