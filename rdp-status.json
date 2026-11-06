@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "rdpfree-11",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
@@ -41,11 +41,12 @@
   "akses": {
     "mode": "tailscale",
     "tailscale": {
-      "ip": "100.99.1.21",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree-11",
-      "magicdns": "rdpfree-11.tail9c6b18.ts.net.",
-      "status": "ok"
+      "status": "ok",
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     }
   },
   "media": {
@@ -139,5 +140,6 @@
       "game_dir": null
     }
   },
-  "heartbeat_at": "2026-11-06T23:38:39.7939818Z"
+  "heartbeat_at": "2026-11-06T23:38:39.7939818Z",
+  "stopped_at": "2026-11-06T23:42:50Z"
 }
